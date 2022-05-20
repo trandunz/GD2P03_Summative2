@@ -28,4 +28,6 @@ public:
 	void QuitSession();
 
 	void OnLoginCompleteDelegate(int32 _localUserNum, bool _bWasSuccessful, const FUniqueNetId& _userId, const FString& _error);
+	void OnCreateSessionCompleteDelegate(FName _inSessionName, bool _wasSuccessful);
+	void OnFindSessionsCompleteDelegate(bool _wasSuccessful);
 };
